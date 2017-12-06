@@ -24,11 +24,11 @@ type RequestConfig struct {
 
 // Response represents axios [Response](https://github.com/axios/axios#response-schema)
 type Response struct {
-	Data       interface{}       `json:"data"`
-	Status     int               `json:"status"`
-	StatusText string            `json:"statusText"`
-	Headers    map[string]string `json:"headers"`
-	Config     map[string]string `json:"config"`
+	Data       interface{}            `json:"data"`
+	Status     int                    `json:"status"`
+	StatusText string                 `json:"statusText"`
+	Headers    map[string]interface{} `json:"headers"`
+	Config     map[string]interface{} `json:"config"`
 }
 
 type lambdaError struct {
