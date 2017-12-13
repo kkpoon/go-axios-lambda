@@ -27,7 +27,7 @@ type Response struct {
 	Data       interface{}            `json:"data"`
 	Status     int                    `json:"status"`
 	StatusText string                 `json:"statusText"`
-	Headers    map[string]interface{} `json:"headers"`
+	Headers    map[string]string      `json:"headers"`
 	Config     map[string]interface{} `json:"config"`
 }
 
